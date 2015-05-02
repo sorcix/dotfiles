@@ -1,0 +1,16 @@
+[core]
+	editor = nano
+	pager = more
+	autocrlf = input
+	quotepath = false
+[user]
+	name = Vic Demuzere
+	email = vic@demuzere.be
+	signingkey = 6690CF94
+[color]
+	ui = true
+[gui]
+	encoding = utf-8
+	spellingdictionary = none
+[push]
+	default = simple

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+SRC=$(pwd)
+DEST=$HOME
+
+function die {
+	echo $1 >&2
+	exit 1
+}
+
+if [ ! -f $SRC/setup ]; then
+	die "Script must be run inside the dotfiles repository."
+fi
+
+# Git
+install -m 400 $SRC/git/gitconfig $DEST/.gitconfig
+
+# GnuPG
+install -m 400 $SRC/gnupg/gpg.conf $DEST/.gnupg/gpg.conf
+#install -m 400 $SRC/gnupg/gpg-agent.conf $DEST/.gnupg/gpg-agent.confa
+
+# i3
+install -m 400 $SRC/i3/config $DEST/.config/i3/config
+
+# i3status
+install -m 400 $SRC/i3/status/config $DEST/.config/i3status/config
+
+# Sakura
+install -m 400 $SRC/sakura/sakura.conf $DEST/.config/sakura/sakura.conf
+
+# TMUX
+install -m 400 $SRC/tmux/tmux.conf $DEST/.tmux.conf
+
+# VIM
+install -m 400 $SRC/vim/vimrc $DEST/.vimrc

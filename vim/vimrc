@@ -1,0 +1,44 @@
+autocmd!
+
+set nocompatible
+set viminfo=
+
+" Enable filetype-specific settings
+filetype on
+filetype plugin on
+filetype indent on
+
+" Disable line wrapping by default
+set linebreak
+set nowrap
+
+" Syntax hilighting, yes please!
+syntax on
+
+" Enable mouse support
+set mouse=a
+
+" Make sure there are 5 lines visible around the cursor
+set scrolloff=5
+
+" Indenting with tabs
+set smartindent
+set shiftwidth=3
+set tabstop=3
+set softtabstop=3
+
+" Line numbers
+set number
+
+" Working in a terminal with dark backgrounds.
+set background=dark
+
+" Always use unix-style line endings
+set fileformats=unix
+set ff=unix
+
+set lazyredraw
+
+" Language specific settings
+autocmd FileType tex setlocal wrap
+autocmd FileType md setlocal wrap
