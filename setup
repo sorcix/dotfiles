@@ -28,6 +28,9 @@ install -D -m 400 $SRC/i3/status/config $DEST/.config/i3status/config
 # Sakura
 install -D -m 400 $SRC/sakura/sakura.conf $DEST/.config/sakura/sakura.conf
 
+# SSH
+install -D -m 400 $SRC/ssh/config $DEST/.ssh/config
+install -D -m 400 $SRC/ssh/authorized_keys $DEST/.ssh/authorized_keys
 
 # TMUX
 install -m 400 $SRC/tmux/tmux.conf $DEST/.tmux.conf

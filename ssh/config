@@ -1,0 +1,19 @@
+Host morpheus
+	HostName morpheus.demuzere.be
+	ForwardAgent yes
+	User vic
+
+Host trinity
+	HostName trinity.demuzere.be
+	ForwardAgent yes
+	User vic
+
+Host cypher
+	HostName cypher.demuzere.be
+	ForwardAgent no
+	User vic
+
+Host Niobe
+	HostName niobe.demuzere.be
+	ForwardAgent no
+	User vic
