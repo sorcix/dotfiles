@@ -15,6 +15,10 @@ fi
 # Bash
 install -m 500 $SRC/profile $DEST/.profile
 
+# Feh
+install -m 500 $SRC/feh/fehbg $DEST/.fehbg
+install -m 400 $SRC/feh/fehbg.jpg $DEST/.fehbg.jpg
+
 # Git
 install -m 400 $SRC/git/gitconfig $DEST/.gitconfig
 
