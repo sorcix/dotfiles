@@ -12,6 +12,9 @@ if [ ! -f $SRC/setup ]; then
 	die "Script must be run inside the dotfiles repository."
 fi
 
+# Bash
+install -m 500 $SRC/profile $DEST/.profile
+
 # Git
 install -m 400 $SRC/git/gitconfig $DEST/.gitconfig
 
@@ -39,3 +42,6 @@ install -m 400 $SRC/tmux/tmux.conf $DEST/.tmux.conf
 
 # VIM
 install -m 400 $SRC/vim/vimrc $DEST/.vimrc
+
+# X11
+install -m 500 $SRC/xinitrc $DEST/.xinitrc
