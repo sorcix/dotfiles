@@ -13,7 +13,7 @@ Host cypher
 	ForwardAgent no
 	User vic
 
-Host Niobe
+Host niobe
 	HostName niobe.demuzere.be
 	ForwardAgent no
 	User vic
