@@ -17,3 +17,10 @@ Host Niobe
 	HostName niobe.demuzere.be
 	ForwardAgent no
 	User vic
+
+Host upf
+	HostName upf.so
+	Port 2225
+	ForwardAgent no
+	User sorcix
+
