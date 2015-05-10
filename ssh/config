@@ -24,3 +24,12 @@ Host upf
 	ForwardAgent no
 	User sorcix
 
+Host git.louwagie.net 
+	Port 2222
+	ForwardAgent no
+	User sorcix
+
+Host git.upf.so 
+	Port 2222
+	ForwardAgent no
+	User sorcix
