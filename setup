@@ -12,19 +12,33 @@ if [ ! -f $SRC/setup ]; then
 	die "Script must be run inside the dotfiles repository."
 fi
 
-# Bash
+# Environment
 install -m 500 $SRC/profile $DEST/.profile
-
-# Feh
-install -m 500 $SRC/feh/fehbg $DEST/.fehbg
-install -m 400 $SRC/feh/fehbg.jpg $DEST/.fehbg.jpg
 
 # Git
 install -m 400 $SRC/git/gitconfig $DEST/.gitconfig
 
 # GnuPG
-install -D -m 400 $SRC/gnupg/gpg.conf $DEST/.gnupg/gpg.conf
-#install -m 400 $SRC/gnupg/gpg-agent.conf $DEST/.gnupg/gpg-agent.confa
+mkdir -p $DEST/.gnupg
+install -m 400 $SRC/gnupg/gpg.conf $DEST/.gnupg/gpg.conf
+
+# SSH
+mkdir -p $DEST/.ssh
+chmod 700 $DEST/.ssh
+touch $DEST/.ssh/known_hosts
+install -m 400 $SRC/ssh/config $DEST/.ssh/config
+install -m 400 $SRC/ssh/authorized_keys $DEST/.ssh/authorized_keys
+chmod 500 $DEST/.ssh
+
+# TMUX
+install -m 400 $SRC/tmux/tmux.conf $DEST/.tmux.conf
+
+# VIM
+install -m 400 $SRC/vim/vimrc $DEST/.vimrc
+
+if [ "$(uname -s)" == "Darwin" ]; then
+	exit
+fi
 
 # i3
 install -D -m 400 $SRC/i3/config $DEST/.config/i3/config
@@ -35,17 +49,9 @@ install -D -m 400 $SRC/i3/status/config $DEST/.config/i3status/config
 # Sakura
 install -D -m 400 $SRC/sakura/sakura.conf $DEST/.config/sakura/sakura.conf
 
-# SSH
-chmod 700 $DEST/.ssh
-install -D -m 400 $SRC/ssh/config $DEST/.ssh/config
-install -D -m 400 $SRC/ssh/authorized_keys $DEST/.ssh/authorized_keys
-chmod 500 $DEST/.ssh
-
-# TMUX
-install -m 400 $SRC/tmux/tmux.conf $DEST/.tmux.conf
-
-# VIM
-install -m 400 $SRC/vim/vimrc $DEST/.vimrc
+# Feh
+install -m 500 $SRC/feh/fehbg $DEST/.fehbg
+install -m 400 $SRC/feh/fehbg.jpg $DEST/.fehbg.jpg
 
 # X11
 install -m 500 $SRC/xinitrc $DEST/.xinitrc
