@@ -3,6 +3,9 @@ autocmd!
 set nocompatible
 set viminfo=
 
+" Sane backspace
+set backspace=indent,eol,start
+
 " Enable filetype-specific settings
 filetype on
 filetype plugin on
