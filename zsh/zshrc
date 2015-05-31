@@ -1,0 +1,4 @@
+autoload -U colors && colors
+
+PROMPT="%F{yellow}%1d%f %(!.%F{red}#%f.%F{green}%%%f) "
+RPROMPT="%(?.%F{green}[ok]%f.%F{red}[fail]%f"

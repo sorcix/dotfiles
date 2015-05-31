@@ -36,6 +36,9 @@ install -m 400 $SRC/tmux/tmux.conf $DEST/.tmux.conf
 # VIM
 install -m 400 $SRC/vim/vimrc $DEST/.vimrc
 
+# zsh
+install -m 400 $SRC/zsh/zshrc $DEST/.zshrc
+
 if [ "$(uname -s)" == "Darwin" ]; then
 	exit
 fi
