@@ -1,6 +1,6 @@
 [core]
 	editor = nano
-	pager = more
+	pager = less -R
 	autocrlf = input
 	quotepath = false
 [user]
