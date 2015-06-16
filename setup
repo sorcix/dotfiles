@@ -38,6 +38,7 @@ install -m 400 $SRC/vim/vimrc $DEST/.vimrc
 
 # zsh
 install -m 400 $SRC/zsh/zshrc $DEST/.zshrc
+install -m 400 $SRC/zsh/zprofile $DEST/.zprofile
 
 if [ "$(uname -s)" == "Darwin" ]; then
 	exit
