@@ -3,6 +3,21 @@ autocmd!
 set nocompatible
 set viminfo=
 
+" Move vertically in wrapped lines
+nnoremap j gj
+nnoremap k gk
+
+" Pretty UI
+set cursorline
+set wildmenu
+
+" Search
+set incsearch
+set hlsearch
+
+" Fold
+set foldenable
+
 " Sane backspace
 set backspace=indent,eol,start
 
@@ -20,6 +35,7 @@ set nowrap
 
 " Syntax hilighting, yes please!
 syntax on
+set showmatch
 
 " Enable mouse support
 set mouse=a
