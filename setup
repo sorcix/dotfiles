@@ -12,6 +12,9 @@ if [ ! -f $SRC/setup ]; then
 	die "Script must be run inside the dotfiles repository."
 fi
 
+# Curl
+install -m 400 $SRC/curl/curlrc $DEST/.curlrc
+
 # Environment
 install -m 500 $SRC/profile $DEST/.profile
 
