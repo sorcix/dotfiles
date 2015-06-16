@@ -29,6 +29,10 @@ Host git.louwagie.net git.upf.so
 	ForwardAgent no
 	User sorcix
 
-Host november
+Host november november.openminds.be
 	ForwardAgent no
 	User vic
+
+Host *.openminds.be 
+	ForwardAgent no
+	User root
