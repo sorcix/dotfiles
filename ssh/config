@@ -1,19 +1,19 @@
-Host morpheus
+Host morpheus.sysops.be morpheus desktop
 	HostName morpheus.sysops.be
 	ForwardAgent yes
 	User vic
 
-Host trinity
+Host trinity.sysops.be trinity
 	HostName trinity.sysops.be
 	ForwardAgent yes
 	User vic
 
-Host cypher
+Host cypher.sysops.be cypher
 	HostName cypher.sysops.be
 	ForwardAgent no
 	User vic
 
-Host niobe
+Host niobe.sysops.be niobe
 	HostName niobe.sysops.be
 	ForwardAgent no
 	User vic
