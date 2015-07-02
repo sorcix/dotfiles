@@ -10,12 +10,17 @@ Host trinity.sysops.be trinity
 
 Host cypher.sysops.be cypher
 	HostName cypher.sysops.be
-	ForwardAgent no
+	ForwardAgent yes
 	User vic
 
 Host niobe.sysops.be niobe
 	HostName niobe.sysops.be
-	ForwardAgent no
+	ForwardAgent yes
+	User vic
+
+Host ceraph.sysops.be ceraph
+	HostName ceraph.sysops.be
+	ForwardAgent yes
 	User vic
 
 Host upf
@@ -30,9 +35,10 @@ Host git.louwagie.net git.upf.so
 	User sorcix
 
 Host november november.openminds.be
+	HostName november.openminds.be
 	ForwardAgent no
 	User vic
 
-Host *.openminds.be 
+Host *.openminds.be *.fusehost.be decaserver*.be 
 	ForwardAgent no
 	User root
