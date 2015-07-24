@@ -1,3 +1,18 @@
+Protocol 2
+
+ForwardAgent no
+ForwardX11 no
+
+HashKnownHosts yes
+
+NumberOfPasswordPrompts 1
+
+TCPKeepAlive no
+ServerAliveInterval 10
+ServerAliveCountMax 3
+
+PreferredAuthentications publickey,keyboard-interactive,password
+
 Host morpheus.sysops.be morpheus desktop
 	HostName morpheus.sysops.be
 	ForwardAgent yes
