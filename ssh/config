@@ -13,8 +13,13 @@ ServerAliveCountMax 3
 
 PreferredAuthentications publickey,keyboard-interactive,password
 
-Host morpheus.sysops.be morpheus desktop
+Host morpheus.sysops.be morpheus
 	HostName morpheus.sysops.be
+	ForwardAgent yes
+	User vic
+
+Host seraph.sysops.be seraph
+	HostName seraph.sysops.be
 	ForwardAgent yes
 	User vic
 
@@ -30,11 +35,6 @@ Host cypher.sysops.be cypher
 
 Host niobe.sysops.be niobe
 	HostName niobe.sysops.be
-	ForwardAgent yes
-	User vic
-
-Host ceraph.sysops.be ceraph
-	HostName ceraph.sysops.be
 	ForwardAgent yes
 	User vic
 
