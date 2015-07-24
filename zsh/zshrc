@@ -1,9 +1,4 @@
 autoload -U colors && colors
 
-# Local chef environment
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby 2.2.2
-
 RPROMPT=
 PROMPT="%F{yellow}%1d%f %(?.%F{green}ツ%f.%F{red}(╯°□°%)╯︵┻━┻%f) %(!.%F{red}#%f.%F{green}%%%f) "
