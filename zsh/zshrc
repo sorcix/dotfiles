@@ -1,4 +1,4 @@
 autoload -U colors && colors
 
 RPROMPT=
-PROMPT="%F{yellow}%1d%f %(?.%F{green}ツ%f.%F{red}(╯°□°%)╯︵┻━┻%f) %(!.%F{red}#%f.%F{green}%%%f) "
+PROMPT="%F{yellow}%1d%f %(?.%F{green}ツ%f.%F{red}(╯°□°%)╯︵┻━┻%f) %(!.%F{red}#%f.%F{green}$%f) "
