@@ -1,4 +1,16 @@
 autoload -U colors && colors
 
-RPROMPT=
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.history
+
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS
+
+bindkey -v
+bindkey "^R" history-incremental-search-backward
+
+RPROMPT=""
 PROMPT="%F{yellow}%1d%f %(?.%F{green}ツ%f.%F{red}(╯°□°%)╯︵┻━┻%f) %(!.%F{red}#%f.%F{green}$%f) "
