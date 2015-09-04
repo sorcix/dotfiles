@@ -38,6 +38,10 @@ Host niobe.sysops.be niobe
 	ForwardAgent yes
 	User vic
 
+Host *.cluster.sysops.be
+	ForwardAgent yes
+	User core
+
 Host upf
 	HostName upf.so
 	Port 2225
