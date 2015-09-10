@@ -23,11 +23,6 @@ Host seraph.sysops.be seraph
 	ForwardAgent yes
 	User vic
 
-Host trinity.sysops.be trinity
-	HostName trinity.sysops.be
-	ForwardAgent yes
-	User vic
-
 Host cypher.sysops.be cypher
 	HostName cypher.sysops.be
 	ForwardAgent yes
