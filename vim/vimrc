@@ -64,3 +64,4 @@ set lazyredraw
 " Language specific settings
 autocmd FileType tex setlocal wrap
 autocmd FileType md setlocal wrap
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
