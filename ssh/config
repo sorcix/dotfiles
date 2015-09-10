@@ -1,6 +1,5 @@
 Protocol 2
 
-ForwardAgent no
 ForwardX11 no
 
 HashKnownHosts yes
