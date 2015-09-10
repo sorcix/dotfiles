@@ -53,7 +53,7 @@ Host november november.openminds.be
 	ForwardAgent no
 	User vic
 
-Host *.openminds.be *.fusehost.be decaserver*.be 
+Host *.openminds.be *.fusehost.be decaserver*.be *.fusehost.net
 	ForwardAgent yes
 	User root
 	StrictHostKeyChecking no
