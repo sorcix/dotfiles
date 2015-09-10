@@ -21,6 +21,10 @@ alias prod='export CHEF_ENV=production'
 alias sandbox='export CHEF_ENV=sandbox'
 alias knifeprod='CHEF_ENV=production knife'
 
+if [ -f ~/.terraform ]; then
+	source ~/.terraform
+fi
+
 # Local chef environment
 if [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]; then
 	source /usr/local/opt/chruby/share/chruby/chruby.sh
