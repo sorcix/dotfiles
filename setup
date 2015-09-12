@@ -31,6 +31,8 @@ chmod 700 $DEST/.ssh
 touch $DEST/.ssh/known_hosts
 install -m 400 $SRC/ssh/config $DEST/.ssh/config
 install -m 400 $SRC/ssh/authorized_keys $DEST/.ssh/authorized_keys
+mkdir -p $DEST/.ssh/controlmasters
+chmod 700 $DEST/.ssh/controlmasters
 chmod 500 $DEST/.ssh
 
 # TMUX

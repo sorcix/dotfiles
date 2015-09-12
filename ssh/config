@@ -12,6 +12,11 @@ ServerAliveCountMax 3
 
 PreferredAuthentications publickey,keyboard-interactive,password
 
+Host *
+	ControlMaster auto
+	ControlPath ~/.ssh/controlmasters/%r@%h:%p
+	ControlPersist 30m
+
 Host morpheus.sysops.be morpheus
 	HostName morpheus.sysops.be
 	ForwardAgent yes
