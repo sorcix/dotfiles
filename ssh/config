@@ -12,30 +12,25 @@ ServerAliveCountMax 3
 
 PreferredAuthentications publickey,keyboard-interactive,password
 
-Host *
-	ControlMaster auto
-	ControlPath ~/.ssh/controlmasters/%r@%h:%p
-	ControlPersist 30m
-
 Host morpheus.sysops.be morpheus
 	HostName morpheus.sysops.be
 	ForwardAgent yes
-	User vic
+	ControlMaster auto
 
 Host seraph.sysops.be seraph
 	HostName seraph.sysops.be
 	ForwardAgent yes
-	User vic
+	ControlMaster auto
 
 Host cypher.sysops.be cypher
 	HostName cypher.sysops.be
 	ForwardAgent yes
-	User vic
+	ControlMaster auto
 
 Host niobe.sysops.be niobe
 	HostName niobe.sysops.be
 	ForwardAgent yes
-	User vic
+	ControlMaster auto
 
 Host *.cluster.sysops.be
 	ForwardAgent yes
@@ -44,20 +39,27 @@ Host *.cluster.sysops.be
 Host upf
 	HostName upf.so
 	Port 2225
-	ForwardAgent no
 	User sorcix
 
 Host git.louwagie.net git.upf.so
 	Port 2222
-	ForwardAgent no
 	User sorcix
 
 Host november november.openminds.be
 	HostName november.openminds.be
+	ControlMaster auto
 	ForwardAgent no
 	User vic
 
 Host *.openminds.be *.fusehost.be decaserver*.be *.fusehost.net
 	ForwardAgent yes
+	ControlMaster auto
 	User root
 	StrictHostKeyChecking no
+
+Host *
+	ControlMaster no
+	ControlPath ~/.ssh/controlmasters/%r@%h:%p
+	ControlPersist 30m
+	ForwardAgent no
+	User vic
