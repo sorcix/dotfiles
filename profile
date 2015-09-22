@@ -5,7 +5,7 @@ export EDITOR=vim
 export PAGER=less
 export BROWSER=firefox
 export TERM=xterm-256color
-export CHEF_ENV=sandbox
+export CHEF_ENV=production
 
 #source $HOME/.ssh-agent > /dev/null
 
