@@ -52,6 +52,9 @@ set softtabstop=3
 " Line numbers
 set number
 
+" Status line
+set laststatus=2
+
 " Working in a terminal with dark backgrounds.
 set background=dark
 
