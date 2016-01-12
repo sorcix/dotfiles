@@ -48,6 +48,6 @@ Host *.openminds.be *.fusehost.be decaserver*.be *.fusehost.net
 Host *
 	ControlMaster auto
 	ControlPath ~/.ssh/controlmasters/%r@%h:%p
-	ControlPersist 30m
+	ControlPersist 120m
 	ForwardAgent no
 	User vic
