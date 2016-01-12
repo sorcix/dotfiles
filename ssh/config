@@ -15,12 +15,10 @@ PreferredAuthentications publickey,keyboard-interactive,password
 Host morpheus.sysops.be morpheus
 	HostName morpheus.sysops.be
 	ForwardAgent yes
-	ControlMaster auto
 
 Host seraph.sysops.be seraph
 	HostName seraph.sysops.be
 	ForwardAgent yes
-	ControlMaster auto
 
 Host cypher.sysops.be cypher
 	HostName cypher.sysops.be
@@ -30,7 +28,6 @@ Host cypher.sysops.be cypher
 Host niobe.sysops.be niobe
 	HostName niobe.sysops.be
 	ForwardAgent yes
-	ControlMaster auto
 
 Host *.cluster.sysops.be
 	ForwardAgent yes
@@ -47,18 +44,16 @@ Host git.louwagie.net git.upf.so
 
 Host november november.openminds.be
 	HostName november.openminds.be
-	ControlMaster auto
 	ForwardAgent no
 	User vic
 
 Host *.openminds.be *.fusehost.be decaserver*.be *.fusehost.net
 	ForwardAgent yes
-	ControlMaster auto
 	User root
 	StrictHostKeyChecking no
 
 Host *
-	ControlMaster no
+	ControlMaster auto
 	ControlPath ~/.ssh/controlmasters/%r@%h:%p
 	ControlPersist 30m
 	ForwardAgent no
