@@ -20,18 +20,9 @@ Host seraph.sysops.be seraph
 	HostName seraph.sysops.be
 	ForwardAgent yes
 
-Host cypher.sysops.be cypher
-	HostName cypher.sysops.be
-	ForwardAgent yes
-	ControlMaster auto
-
 Host niobe.sysops.be niobe
 	HostName niobe.sysops.be
 	ForwardAgent yes
-
-Host *.cluster.sysops.be
-	ForwardAgent yes
-	User core
 
 Host upf
 	HostName upf.so
