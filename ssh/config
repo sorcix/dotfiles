@@ -27,10 +27,12 @@ Host niobe.sysops.be niobe
 Host upf
 	HostName upf.so
 	Port 2225
+	ForwardAgent no
 	User sorcix
 
 Host git.louwagie.net git.upf.so
 	Port 2222
+	ForwardAgent no
 	User sorcix
 
 Host november november.openminds.be
