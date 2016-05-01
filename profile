@@ -17,9 +17,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gp='git push'
 
-alias prod='export CHEF_ENV=production'
-alias sandbox='export CHEF_ENV=sandbox'
-alias knifeprod='CHEF_ENV=production knife'
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
 
 if [ -f ~/.terraform ]; then
 	source ~/.terraform
