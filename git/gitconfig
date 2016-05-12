@@ -22,3 +22,5 @@
 	spellingdictionary = none
 [push]
 	default = current
+[pull]
+	rebase = true
