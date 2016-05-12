@@ -3,6 +3,14 @@
 	pager = less -R
 	autocrlf = input
 	quotepath = false
+	whitespace = blank-at-eol,blank-at-eof,space-before-tab
+	fileMode = true
+	ignoreCase = false
+	eol = lf
+	compression = 9
+	commentChar = "#"
+[apply]
+	whitespace = fix
 [user]
 	name = Vic Demuzere
 	email = vic@demuzere.be
