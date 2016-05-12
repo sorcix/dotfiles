@@ -21,4 +21,4 @@
 	encoding = utf-8
 	spellingdictionary = none
 [push]
-	default = simple
+	default = current
