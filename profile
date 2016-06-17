@@ -5,7 +5,6 @@ export EDITOR=vim
 export PAGER=less
 export BROWSER=firefox
 export TERM=xterm-256color
-export CHEF_ENV=production
 
 #source $HOME/.ssh-agent > /dev/null
 
@@ -26,6 +25,7 @@ fi
 
 # Local chef environment
 if [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]; then
+	export CHEF_ENV=production
 	source /usr/local/opt/chruby/share/chruby/chruby.sh
 	source /usr/local/opt/chruby/share/chruby/auto.sh
 	chruby 2.2.2
