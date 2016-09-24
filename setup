@@ -44,23 +44,3 @@ install -m 400 $SRC/vim/vimrc $DEST/.vimrc
 # zsh
 install -m 400 $SRC/zsh/zshrc $DEST/.zshrc
 install -m 400 $SRC/zsh/zprofile $DEST/.zprofile
-
-if [ "$(uname -s)" == "Darwin" ]; then
-	exit
-fi
-
-# i3
-#install -D -m 400 $SRC/i3/config $DEST/.config/i3/config
-
-# i3status
-#install -D -m 400 $SRC/i3/status/config $DEST/.config/i3status/config
-
-# Sakura
-#install -D -m 400 $SRC/sakura/sakura.conf $DEST/.config/sakura/sakura.conf
-
-# Feh
-#install -m 500 $SRC/feh/fehbg $DEST/.fehbg
-#install -m 400 $SRC/feh/fehbg.jpg $DEST/.fehbg.jpg
-
-# X11
-#install -m 500 $SRC/xinitrc $DEST/.xinitrc
