@@ -24,6 +24,10 @@ Host alioth.sysops.be alioth
 	HostName alioth.sysops.be
 	ForwardAgent yes
 
+Host sirius.sysops.be sirius
+	HostName sirius.sysops.be
+	ForwardAgent yes
+
 Host upf
 	HostName upf.space
 	Port 2225
